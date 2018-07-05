@@ -10,32 +10,99 @@
         <script type="text/javascript" src="js/jquery.3.3.1.js"></script>
     </head>
     <body>
-        <div class="container" style="padding: 0px;">
-            <style>
-                .col-md {
-                    border-bottom: 1px solid #EDEEEF;
-                    width: 80%;
-                    padding: 15px 0px 15px 0px;
-                    margin-left: 10%;
-                }
-            </style>
+        <style>
+            .col-md {
+                border-bottom: 1px solid #EDEEEF;
+                width: 80%;
+                padding: 15px 0px 15px 0px;
+                margin-left: 10%;
+            }
 
-            <div class="page-header" style="background-color: #5BCAAA; text-align: center; color: white; border-bottom: 15px solid #EDEEEF;">
-                <h1 style="padding: 25px;">електроенергия</h1>
-            </div>
+            .footer {
+              position: relative;
+              margin-top: -150px; /* negative value of footer height */
+              height: 150px;
+              padding-top:20px;
+            }
 
-            <div class="row" style="color: #CBCCCD;">
-                <div class="col-md col-10">
-                  <a href="index.html">Основна</a>
+            a:link, a:visited{
+                text-decoration: none;
+                color: #cbcccd;
+            }
+            a {
+                display: block;
+            }
+
+            .page-header {
+                background-color: #5BCAAA;
+                text-align: center;
+                color: white;
+                border-bottom: 15px solid #EDEEEF;
+            }
+
+            .row {
+                color: #CBCCCD;
+            }
+
+            /*header {
+                position: fixed;
+                left: 0;
+                top: 0;
+                width: 100%;
+            }*/
+
+            header {
+                overflow: hidden;
+            }
+
+            main div.container {
+                overflow-y: auto;
+                height: 575px;
+            }
+
+            footer {
+                position: fixed;
+                left: 0;
+                bottom: 0;
+                width: 100%;
+                background-color: #5BCAAA;
+                border-top: 15px solid #EDEEEF;
+                color: white;
+                text-align: center;
+            }
+        </style>
+
+        <header>
+            <div class="page-header">
+                <h1 style="padding: 25px;">Енергия</h1>
+            </div>
+        </header>
+
+        <main>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md col-10">
+                      <a href="wells.html">Водоеми</a>
+                    </div>
                 </div>
-                <div class="col-md col-10">
-                  <a href="">Помпени станции</a>
+                <div class="row">
+                    <div class="col-md col-10">
+                      <a href="">Помпени станции</a>
+                    </div>
                 </div>
-                <div class="col-md col-10">
-                  <a href="">Енергия</a>
+                <div class="row">
+                    <div class="col-md col-10">
+                      <a href="electric.html">Енергия</a>
+                    </div>
                 </div>
             </div>
-        </div>
+        </main>
+
+        <footer>
+            <div class="container">
+                <span>&copy; Sorokov Instruments Ltd.</span>
+            </div>
+        </footer>
 
         <script type="text/javascript" src="bootstrap/js/bootstrap.js"></script>
         <script type="text/javascript" src="cordova.js"></script>
