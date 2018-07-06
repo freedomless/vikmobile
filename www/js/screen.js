@@ -15,4 +15,9 @@ $(document).ready(function() {
         $('main div.container').height(windowHeight - (headerHeight + footerHeight) - 15);
         $('main div.container').css("border", "none");
     });
+
+    (function blink() {
+        $('.blink_me').fadeOut(500).fadeIn(500, blink); 
+    })();
+
 });
