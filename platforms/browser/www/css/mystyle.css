@@ -31,6 +31,11 @@ a {
     color: #CBCCCD;
 }
 
+.progress {
+    width: 100%;
+    background-color: #EDEEEF;
+}
+
 /*header {
     position: fixed;
     left: 0;
