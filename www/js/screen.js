@@ -16,8 +16,10 @@ $(document).ready(function() {
         $('main div.container').css("border", "none");
     });
 
-    (function blink() {
-        $('.blink_me').fadeOut(500).fadeIn(500, blink); 
-    })();
+    // blinking element
+    // (function blink() {
+    //     $('.blink_me').fadeOut(500).fadeIn(500, blink);
+    // })();
 
+    // http://maverickcardio.com/test/index.php
 });
