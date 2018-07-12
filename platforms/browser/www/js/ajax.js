@@ -15,7 +15,7 @@ $(document).ready(function() {
     }
 
     // Vibrate for 3 seconds
-    navigator.vibrate(3000);
+    // navigator.vibrate(1000);
 
     function updateElectricData (dataFromServer) {
         let barPurcentage;

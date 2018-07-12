@@ -11,7 +11,18 @@
     <!-- needed for network -->
     <plugin name="cordova-plugin-whitelist" source="npm" spec="~1.2.1" />
     <plugin name="cordova-plugin-vibration" source="npm" spec="~2.1.0" />
-    
+    <plugin name="phonegap-plugin-push" source="npm" spec="~1.8.0">
+        <variable name="SENDER_ID" value="XXXXXXX" />
+    </plugin>
+
+    <platform name="android">
+        <resource-file src="google-services.json" target="app/google-services.json" />
+    </platform>
+
+    <platform name="ios">
+        <resource-file src="GoogleService-Info.plist" />
+    </platform>
+
     <access origin="*" />
     <allow-intent href="http://*/*" />
     <allow-intent href="https://*/*" />
