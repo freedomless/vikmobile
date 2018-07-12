@@ -6,13 +6,16 @@ $(document).ready(function() {
 
     function getDataFromServer () {
         $.ajax({
-            url: "http://maverickcardio.com/test/index.php"
+            url: "https://maverickcardio.com/test/index.php"
         }).done(function(dataFromServer) {
             updateElectricData(dataFromServer);
         }).fail(function () {
             $("#debug").html(dataFromServer);
         });
     }
+
+    // Vibrate for 3 seconds
+    navigator.vibrate(3000);
 
     function updateElectricData (dataFromServer) {
         let barPurcentage;
