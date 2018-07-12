@@ -11,10 +11,10 @@
     <!-- needed for network -->
     <plugin name="cordova-plugin-whitelist" source="npm" spec="~1.2.1" />
     <plugin name="cordova-plugin-vibration" source="npm" spec="~2.1.0" />
-    <plugin name="cordova-support-google-services" source="nmp" spec="~1.2.0">
+    <plugin name="cordova-support-google-services" source="npm" spec="~1.2.0">
 
     <platform name="android">
-        <resource-file src="google-services.json" target="app/google-services.json" />
+        <resource-file src="google-services.json" target="google-services.json" />
     </platform>
 
     <access origin="*" />
