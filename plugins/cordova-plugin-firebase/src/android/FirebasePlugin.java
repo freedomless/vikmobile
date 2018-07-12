@@ -1,6 +1,5 @@
 package org.apache.cordova.firebase;
 
-import android.app.NotificationManager;
 import android.content.ComponentName;
 import android.content.Context;
 import android.content.Intent;
@@ -189,9 +188,6 @@ public class FirebasePlugin extends CordovaPlugin {
             return true;
         } else if (action.equals("setAnalyticsCollectionEnabled")) {
             this.setAnalyticsCollectionEnabled(callbackContext, args.getBoolean(0));
-            return true;
-        } else if (action.equals("clearAllNotifications")) {
-            this.clearAllNotifications(callbackContext);
             return true;
         }
 
@@ -873,20 +869,6 @@ public class FirebasePlugin extends CordovaPlugin {
                     FirebaseCrash.log(e.getMessage());
                     e.printStackTrace();
                     callbackContext.error(e.getMessage());
-                }
-            }
-        });
-    }
-
-    public void clearAllNotifications(final CallbackContext callbackContext) {
-        cordova.getThreadPool().execute(new Runnable() {
-            public void run() {
-                try {
-                    Context context = cordova.getActivity();
-                    NotificationManager nm = (NotificationManager) context.getSystemService(Context.NOTIFICATION_SERVICE);
-                    nm.cancelAll();
-                    callbackContext.success();
-                } catch (Exception e) {
                 }
             }
         });

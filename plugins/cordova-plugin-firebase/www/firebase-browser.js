@@ -141,9 +141,3 @@ exports.setAnalyticsCollectionEnabled = function (enabled, success, error) {
         success();
     }
 };
-
-exports.clearAllNotifications = function(success, error) {
-    if (typeof success === 'function') {
-        success();
-    }
-};

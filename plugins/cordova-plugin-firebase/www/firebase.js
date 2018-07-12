@@ -155,7 +155,3 @@ exports.verifyPhoneNumber = function (number, timeOutDuration, success, error) {
       exec(success, error, "FirebasePlugin", "verifyPhoneNumber", [number, timeOutDuration]);
     }
 };
-
-exports.clearAllNotifications = function(success, error) {
-    exec(success, error, "FirebasePlugin", "clearAllNotifications", []);
-};
