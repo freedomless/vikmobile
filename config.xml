@@ -14,7 +14,8 @@
     <plugin name="cordova-support-google-services" spec="^1.2.0" />
 
     <platform name="android">
-        <resource-file src="google-services.json" target="google-services.json" />
+        <resource-file src="google-services.json" target="app/google-services.json" />
+        <resource-file src="google-services.json" target="project/google-services.json" />
     </platform>
 
     <access origin="*" />
