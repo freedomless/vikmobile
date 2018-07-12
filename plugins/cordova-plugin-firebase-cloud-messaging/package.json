@@ -1,0 +1,69 @@
+{
+  "_from": "git+https://github.com/blakgeek/cordova-plugin-firebase-messaging.git",
+  "_id": "cordova-plugin-firebase-cloud-messaging@1.6.1",
+  "_inBundle": false,
+  "_location": "/cordova-plugin-firebase-cloud-messaging",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "git",
+    "raw": "https://github.com/blakgeek/cordova-plugin-firebase-messaging",
+    "rawSpec": "https://github.com/blakgeek/cordova-plugin-firebase-messaging",
+    "saveSpec": "git+https://github.com/blakgeek/cordova-plugin-firebase-messaging.git",
+    "fetchSpec": "https://github.com/blakgeek/cordova-plugin-firebase-messaging.git",
+    "gitCommittish": null
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "git+https://github.com/blakgeek/cordova-plugin-firebase-messaging.git#39047e35a750eae91633776c990f2c49019cad84",
+  "_spec": "https://github.com/blakgeek/cordova-plugin-firebase-messaging",
+  "_where": "/Users/mac/Documents/work/phonegapprojects/viktest_work/pushtest",
+  "author": {
+    "name": "Carlos \"blakgeek\" Lawton"
+  },
+  "bugs": {
+    "url": "https://github.com/blakgeek/cordova-plugin-firebase-messaging/issues"
+  },
+  "bundleDependencies": false,
+  "contributes": [
+    {
+      "name": "Felipe Echanique Torres"
+    }
+  ],
+  "cordova_name": "Cordova Firebase Messaging Plugin",
+  "deprecated": false,
+  "description": "Adds support for Firebase Cloud Messaging to your Cordova app",
+  "devDependencies": {
+    "libxmljs": "^0.18.4"
+  },
+  "homepage": "https://github.com/blakgeek/cordova-plugin-firebase-messaging#readme",
+  "keywords": [
+    "ecosystem:cordova",
+    "cordova-android",
+    "cordova-ios",
+    "notifications",
+    "cloud",
+    "messaging",
+    "push",
+    "firebase",
+    "fcm",
+    "ios",
+    "android",
+    "cordova"
+  ],
+  "license": "MIT",
+  "name": "cordova-plugin-firebase-cloud-messaging",
+  "platforms": [
+    "android",
+    "ios"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/blakgeek/cordova-plugin-firebase-messaging.git"
+  },
+  "scripts": {
+    "postversion": "node scripts/sync-plugin-version.js; git add plugin.xml; git commit plugin.xml -m \"v${npm_package_version}\""
+  },
+  "version": "1.6.1"
+}
