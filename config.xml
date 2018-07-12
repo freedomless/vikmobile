@@ -11,14 +11,8 @@
     <!-- needed for network -->
     <plugin name="cordova-plugin-whitelist" source="npm" spec="~1.2.1" />
     <plugin name="cordova-plugin-vibration" source="npm" spec="~2.1.0" />
-    <plugin name="tabris-plugin-firebase" source="npm" spec="^2.0.0" />
-    <plugin name="tabris-plugin-firebase" spec="../">
-        <variable name="ANDROID_NOTIFICATION_ICON" value="@drawable/ic_stat_trend" />
-    </plugin>
 
     <platform name="android">
-        <resource-file src="res/android/drawable-xhdpi/ic_notification.png"
-                 target="app/src/main/res/drawable-xhdpi/ic_notification.png" />
         <resource-file src="google-services.json" target="app/google-services.json" />
     </platform>
 
