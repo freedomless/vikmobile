@@ -13,9 +13,9 @@
     <plugin name="cordova-plugin-vibration" source="npm" spec="~2.1.0" />
     <plugin name="cordova-plugin-fcm" source="npm" spec="^2.1.2" />
 
-    <platform name="android">
+    <!-- <platform name="android">
         <resource-file src="google-services.json" target="app/google-services.json" />
-    </platform>
+    </platform> -->
 
     <access origin="*" />
     <allow-intent href="http://*/*" />
