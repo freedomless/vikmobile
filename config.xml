@@ -11,13 +11,9 @@
     <!-- needed for network -->
     <plugin name="cordova-plugin-whitelist" source="npm" spec="~1.2.1" />
     <plugin name="cordova-plugin-vibration" source="npm" spec="~2.1.0" />
-    <plugin name="cordova-plugin-fcm" source="npm" spec="^2.1.2" />
 
-    <!-- <platform name="android">
-        <resource-file src="google-services.json" target="app/google-services.json" />
-    </platform> -->
-
-    <access origin="*" />
+    <!-- <access origin="*" /> -->
+    <access origin="*.maverickcardio.com" />
     <allow-intent href="http://*/*" />
     <allow-intent href="https://*/*" />
     <allow-intent href="tel:*" />
