@@ -51,8 +51,5 @@ $(document).ready(function() {
         barPurcentage = Number(dataFromServer[5] / 1000 * 100);
         $("#itBar").css("width", barPurcentage + "%");
         $("#it").html(dataFromServer[5] / 10 + " A");
-
     }
-
-
 });
